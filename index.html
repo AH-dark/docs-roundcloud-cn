@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
+  <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+  <title>圆云用户手册</title>
+</head>
+<body>
+  <nav>
+    <a href="#/">圆云手册</a>
+    <a href="https://www.yuanpan.tk">圆盘</a>
+    <a href="https://xiao.yuanpan.tk">圆小盘</a>
+    <a href="https://lt.roundcloud.cn">圆云论坛</a>
+  </nav>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      //...
+      disqus: 'shortname',
+      loadSidebar: true,
+      name: '圆云用户手册',
+      subMaxLeven: 2,
+      search: 'auto'
+    }
+  </script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/disqus.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
+  <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
+  <script>
+    const gitalk = new Gitalk({
+      clientID: 'ec776efce874d4115505',
+      clientSecret: '1250873ad0605ec27ad5481f32fca83c460794fa',
+      repo: 'docs-roundcloud-cn',
+      owner: 'AH-dark',
+      admin: ['AH-dark'],
+      // facebook-like distraction free mode
+      distractionFreeMode: true
+    })
+  </script>
+</body>
+</html>
